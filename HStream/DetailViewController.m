@@ -21,6 +21,7 @@
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize popoverController = _myPopoverController;
+@synthesize webView = _webView;
 
 #pragma mark - Managing the detail item
 
@@ -42,11 +43,30 @@
     }        
 }
 
+- (void) loadSelectedPage {
+    NSString *url;
+    if (!_detailItem) {
+        url = [NSString stringWithFormat:@"http://digitalhistory.unl.edu"];
+    }
+    else {
+        url = [NSString stringWithFormat:@"%@", url];
+        NSLog(@"Load the detail view from URL: %@", url);
+    }
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+}
+
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
-    self.detailDescriptionLabel.text = [self.detailItem description];
+    //self.detailDescriptionLabel.text = [self.detailItem description];
+    
+    if (!_detailItem) {
+        _detailDescriptionLabel.text = @"HStream";
+    }
+    else {
+        _detailDescriptionLabel.text = [_detailItem objectForKey:@"title"];
+    }
+    [self loadSelectedPage];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -77,7 +97,7 @@
 
 - (void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController: (UIPopoverController *)pc
 {
-    barButtonItem.title = @"Events";
+    barButtonItem.title = @"Stream";
     NSMutableArray *items = [[self.toolbar items] mutableCopy];
     [items insertObject:barButtonItem atIndex:0];
     [self.toolbar setItems:items animated:YES];

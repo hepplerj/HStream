@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class Articles;
 @class DetailViewController;
 
-@interface RootViewController : UITableViewController
+@interface RootViewController : UITableViewController {
+    DetailViewController *detailViewController;
+    Articles *articles;
+}
 
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
+@property (nonatomic, retain) IBOutlet Articles *articles;
 
 @end

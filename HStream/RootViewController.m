@@ -7,40 +7,47 @@
 //
 
 #import "RootViewController.h"
-
 #import "DetailViewController.h"
+#import "Articles.h"
 
 @implementation RootViewController
 		
-@synthesize detailViewController;
+@synthesize detailViewController, articles;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title=@"HStream";
     self.clearsSelectionOnViewWillAppear = NO;
     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+    
+    //NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    //[nc addObserver:self selector:@selector(handleXMLDownloadComplete:) name:EMRXMLDownloadCompleteNotification object:nil];
+}
+	
+- (void) handleXMLDownloadComplete: (NSNotification *)note {
+    [self.tableView reloadData];
 }
 
-		
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//}
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
+//- (void)viewDidAppear:(BOOL)animated
+//{
+//    [super viewDidAppear:animated];
+//}
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+//	[super viewWillDisappear:animated];
+//}
 
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
+//- (void)viewDidDisappear:(BOOL)animated
+//{
+//	[super viewDidDisappear:animated];
+//}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
@@ -55,7 +62,7 @@
 		
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [articles count];
     		
 }
 
@@ -67,10 +74,14 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 
     // Configure the cell.
-    		
+    //cell.textLabel.text = [NSString stringWithFormat:@"Row %d", indexPath.row];
+    NSMutableDictionary *article = [self.articles articleAtIndex:indexPath.row];
+    NSString *title = [article objectForKey:@"title"];
+    cell.textLabel.text = title;
     return cell;
 }
 
@@ -107,15 +118,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here -- for example, create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    detailViewController.detailItem = [self.articles articleAtIndex:indexPath.row];
 }
 
 - (void)didReceiveMemoryWarning
@@ -135,6 +138,7 @@
 - (void)dealloc
 {
     [detailViewController release];
+    [articles release], articles = nil;
     [super dealloc];
 }
 

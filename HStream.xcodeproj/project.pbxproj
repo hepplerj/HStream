@@ -21,9 +21,7 @@
 		88DF5530142F8DD9009CA396 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF550A142F8DD8009CA396 /* UIKit.framework */; };
 		88DF5531142F8DD9009CA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF550C142F8DD8009CA396 /* Foundation.framework */; };
 		88DF5532142F8DD9009CA396 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF550E142F8DD8009CA396 /* CoreGraphics.framework */; };
-		88DF553A142F8DD9009CA396 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88DF5538142F8DD9009CA396 /* InfoPlist.strings */; };
-		88DF553C142F8DD9009CA396 /* HStreamTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 88DF553B142F8DD9009CA396 /* HStreamTests.h */; };
-		88DF553E142F8DD9009CA396 /* HStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DF553D142F8DD9009CA396 /* HStreamTests.m */; };
+		88DF5549142F8E93009CA396 /* Articles.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DF5548142F8E93009CA396 /* Articles.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,24 +39,22 @@
 		88DF550A142F8DD8009CA396 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		88DF550C142F8DD8009CA396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88DF550E142F8DD8009CA396 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		88DF5512142F8DD8009CA396 /* HStream-Info.plist */ = {isa = PBXFileReference; path = "HStream-Info.plist"; sourceTree = "<group>"; };
+		88DF5512142F8DD8009CA396 /* HStream-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HStream-Info.plist"; sourceTree = "<group>"; };
 		88DF5514142F8DD9009CA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88DF5516142F8DD9009CA396 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		88DF5518142F8DD9009CA396 /* HStream-Prefix.pch */ = {isa = PBXFileReference; path = "HStream-Prefix.pch"; sourceTree = "<group>"; };
-		88DF5519142F8DD9009CA396 /* HStreamAppDelegate.h */ = {isa = PBXFileReference; path = HStreamAppDelegate.h; sourceTree = "<group>"; };
+		88DF5518142F8DD9009CA396 /* HStream-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HStream-Prefix.pch"; sourceTree = "<group>"; };
+		88DF5519142F8DD9009CA396 /* HStreamAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HStreamAppDelegate.h; sourceTree = "<group>"; };
 		88DF551A142F8DD9009CA396 /* HStreamAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HStreamAppDelegate.m; sourceTree = "<group>"; };
 		88DF551D142F8DD9009CA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		88DF551F142F8DD9009CA396 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		88DF551F142F8DD9009CA396 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		88DF5520142F8DD9009CA396 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		88DF5523142F8DD9009CA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
-		88DF5525142F8DD9009CA396 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		88DF5525142F8DD9009CA396 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		88DF5526142F8DD9009CA396 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		88DF552D142F8DD9009CA396 /* HStreamTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HStreamTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DF552E142F8DD9009CA396 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		88DF5537142F8DD9009CA396 /* HStreamTests-Info.plist */ = {isa = PBXFileReference; path = "HStreamTests-Info.plist"; sourceTree = "<group>"; };
-		88DF5539142F8DD9009CA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		88DF553B142F8DD9009CA396 /* HStreamTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HStreamTests.h; sourceTree = "<group>"; };
-		88DF553D142F8DD9009CA396 /* HStreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HStreamTests.m; sourceTree = "<group>"; };
+		88DF5547142F8E93009CA396 /* Articles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Articles.h; sourceTree = "<group>"; };
+		88DF5548142F8E93009CA396 /* Articles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Articles.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				88DF5510142F8DD8009CA396 /* HStream */,
-				88DF5535142F8DD9009CA396 /* HStreamTests */,
 				88DF5509142F8DD8009CA396 /* Frameworks */,
 				88DF5507142F8DD8009CA396 /* Products */,
 			);
@@ -121,12 +116,14 @@
 			children = (
 				88DF5519142F8DD9009CA396 /* HStreamAppDelegate.h */,
 				88DF551A142F8DD9009CA396 /* HStreamAppDelegate.m */,
-				88DF551C142F8DD9009CA396 /* MainWindow.xib */,
+				88DF5547142F8E93009CA396 /* Articles.h */,
+				88DF5548142F8E93009CA396 /* Articles.m */,
 				88DF551F142F8DD9009CA396 /* DetailViewController.h */,
 				88DF5520142F8DD9009CA396 /* DetailViewController.m */,
-				88DF5522142F8DD9009CA396 /* DetailView.xib */,
 				88DF5525142F8DD9009CA396 /* RootViewController.h */,
 				88DF5526142F8DD9009CA396 /* RootViewController.m */,
+				88DF551C142F8DD9009CA396 /* MainWindow.xib */,
+				88DF5522142F8DD9009CA396 /* DetailView.xib */,
 				88DF5511142F8DD8009CA396 /* Supporting Files */,
 			);
 			path = HStream;
@@ -139,25 +136,6 @@
 				88DF5513142F8DD9009CA396 /* InfoPlist.strings */,
 				88DF5516142F8DD9009CA396 /* main.m */,
 				88DF5518142F8DD9009CA396 /* HStream-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		88DF5535142F8DD9009CA396 /* HStreamTests */ = {
-			isa = PBXGroup;
-			children = (
-				88DF553B142F8DD9009CA396 /* HStreamTests.h */,
-				88DF553D142F8DD9009CA396 /* HStreamTests.m */,
-				88DF5536142F8DD9009CA396 /* Supporting Files */,
-			);
-			path = HStreamTests;
-			sourceTree = "<group>";
-		};
-		88DF5536142F8DD9009CA396 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88DF5537142F8DD9009CA396 /* HStreamTests-Info.plist */,
-				88DF5538142F8DD9009CA396 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -242,8 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88DF553A142F8DD9009CA396 /* InfoPlist.strings in Resources */,
-				88DF553C142F8DD9009CA396 /* HStreamTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +250,7 @@
 				88DF551B142F8DD9009CA396 /* HStreamAppDelegate.m in Sources */,
 				88DF5521142F8DD9009CA396 /* DetailViewController.m in Sources */,
 				88DF5527142F8DD9009CA396 /* RootViewController.m in Sources */,
+				88DF5549142F8E93009CA396 /* Articles.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88DF553E142F8DD9009CA396 /* HStreamTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,14 +294,6 @@
 				88DF5523142F8DD9009CA396 /* en */,
 			);
 			name = DetailView.xib;
-			sourceTree = "<group>";
-		};
-		88DF5538142F8DD9009CA396 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88DF5539142F8DD9009CA396 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
