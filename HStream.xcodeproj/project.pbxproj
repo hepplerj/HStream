@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88DF550B142F8DD8009CA396 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF550A142F8DD8009CA396 /* UIKit.framework */; };
+		88DF550D142F8DD8009CA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF550C142F8DD8009CA396 /* Foundation.framework */; };
+		88DF550F142F8DD8009CA396 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF550E142F8DD8009CA396 /* CoreGraphics.framework */; };
+		88DF5515142F8DD9009CA396 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88DF5513142F8DD9009CA396 /* InfoPlist.strings */; };
+		88DF5517142F8DD9009CA396 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DF5516142F8DD9009CA396 /* main.m */; };
+		88DF551B142F8DD9009CA396 /* HStreamAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DF551A142F8DD9009CA396 /* HStreamAppDelegate.m */; };
+		88DF551E142F8DD9009CA396 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DF551C142F8DD9009CA396 /* MainWindow.xib */; };
+		88DF5521142F8DD9009CA396 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DF5520142F8DD9009CA396 /* DetailViewController.m */; };
+		88DF5524142F8DD9009CA396 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DF5522142F8DD9009CA396 /* DetailView.xib */; };
+		88DF5527142F8DD9009CA396 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DF5526142F8DD9009CA396 /* RootViewController.m */; };
+		88DF552F142F8DD9009CA396 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF552E142F8DD9009CA396 /* SenTestingKit.framework */; };
+		88DF5530142F8DD9009CA396 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF550A142F8DD8009CA396 /* UIKit.framework */; };
+		88DF5531142F8DD9009CA396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF550C142F8DD8009CA396 /* Foundation.framework */; };
+		88DF5532142F8DD9009CA396 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF550E142F8DD8009CA396 /* CoreGraphics.framework */; };
+		88DF553A142F8DD9009CA396 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88DF5538142F8DD9009CA396 /* InfoPlist.strings */; };
+		88DF553C142F8DD9009CA396 /* HStreamTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 88DF553B142F8DD9009CA396 /* HStreamTests.h */; };
+		88DF553E142F8DD9009CA396 /* HStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DF553D142F8DD9009CA396 /* HStreamTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88DF5533142F8DD9009CA396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88DF54FD142F8DD8009CA396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88DF5505142F8DD8009CA396;
+			remoteInfo = HStream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88DF5506142F8DD8009CA396 /* HStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88DF550A142F8DD8009CA396 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		88DF550C142F8DD8009CA396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		88DF550E142F8DD8009CA396 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		88DF5512142F8DD8009CA396 /* HStream-Info.plist */ = {isa = PBXFileReference; path = "HStream-Info.plist"; sourceTree = "<group>"; };
+		88DF5514142F8DD9009CA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88DF5516142F8DD9009CA396 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88DF5518142F8DD9009CA396 /* HStream-Prefix.pch */ = {isa = PBXFileReference; path = "HStream-Prefix.pch"; sourceTree = "<group>"; };
+		88DF5519142F8DD9009CA396 /* HStreamAppDelegate.h */ = {isa = PBXFileReference; path = HStreamAppDelegate.h; sourceTree = "<group>"; };
+		88DF551A142F8DD9009CA396 /* HStreamAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HStreamAppDelegate.m; sourceTree = "<group>"; };
+		88DF551D142F8DD9009CA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		88DF551F142F8DD9009CA396 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		88DF5520142F8DD9009CA396 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		88DF5523142F8DD9009CA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
+		88DF5525142F8DD9009CA396 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		88DF5526142F8DD9009CA396 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		88DF552D142F8DD9009CA396 /* HStreamTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HStreamTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88DF552E142F8DD9009CA396 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		88DF5537142F8DD9009CA396 /* HStreamTests-Info.plist */ = {isa = PBXFileReference; path = "HStreamTests-Info.plist"; sourceTree = "<group>"; };
+		88DF5539142F8DD9009CA396 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88DF553B142F8DD9009CA396 /* HStreamTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HStreamTests.h; sourceTree = "<group>"; };
+		88DF553D142F8DD9009CA396 /* HStreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HStreamTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88DF5503142F8DD8009CA396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DF550B142F8DD8009CA396 /* UIKit.framework in Frameworks */,
+				88DF550D142F8DD8009CA396 /* Foundation.framework in Frameworks */,
+				88DF550F142F8DD8009CA396 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DF5529142F8DD9009CA396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DF552F142F8DD9009CA396 /* SenTestingKit.framework in Frameworks */,
+				88DF5530142F8DD9009CA396 /* UIKit.framework in Frameworks */,
+				88DF5531142F8DD9009CA396 /* Foundation.framework in Frameworks */,
+				88DF5532142F8DD9009CA396 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88DF54FB142F8DD8009CA396 = {
+			isa = PBXGroup;
+			children = (
+				88DF5510142F8DD8009CA396 /* HStream */,
+				88DF5535142F8DD9009CA396 /* HStreamTests */,
+				88DF5509142F8DD8009CA396 /* Frameworks */,
+				88DF5507142F8DD8009CA396 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88DF5507142F8DD8009CA396 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88DF5506142F8DD8009CA396 /* HStream.app */,
+				88DF552D142F8DD9009CA396 /* HStreamTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88DF5509142F8DD8009CA396 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88DF550A142F8DD8009CA396 /* UIKit.framework */,
+				88DF550C142F8DD8009CA396 /* Foundation.framework */,
+				88DF550E142F8DD8009CA396 /* CoreGraphics.framework */,
+				88DF552E142F8DD9009CA396 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88DF5510142F8DD8009CA396 /* HStream */ = {
+			isa = PBXGroup;
+			children = (
+				88DF5519142F8DD9009CA396 /* HStreamAppDelegate.h */,
+				88DF551A142F8DD9009CA396 /* HStreamAppDelegate.m */,
+				88DF551C142F8DD9009CA396 /* MainWindow.xib */,
+				88DF551F142F8DD9009CA396 /* DetailViewController.h */,
+				88DF5520142F8DD9009CA396 /* DetailViewController.m */,
+				88DF5522142F8DD9009CA396 /* DetailView.xib */,
+				88DF5525142F8DD9009CA396 /* RootViewController.h */,
+				88DF5526142F8DD9009CA396 /* RootViewController.m */,
+				88DF5511142F8DD8009CA396 /* Supporting Files */,
+			);
+			path = HStream;
+			sourceTree = "<group>";
+		};
+		88DF5511142F8DD8009CA396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88DF5512142F8DD8009CA396 /* HStream-Info.plist */,
+				88DF5513142F8DD9009CA396 /* InfoPlist.strings */,
+				88DF5516142F8DD9009CA396 /* main.m */,
+				88DF5518142F8DD9009CA396 /* HStream-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88DF5535142F8DD9009CA396 /* HStreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				88DF553B142F8DD9009CA396 /* HStreamTests.h */,
+				88DF553D142F8DD9009CA396 /* HStreamTests.m */,
+				88DF5536142F8DD9009CA396 /* Supporting Files */,
+			);
+			path = HStreamTests;
+			sourceTree = "<group>";
+		};
+		88DF5536142F8DD9009CA396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88DF5537142F8DD9009CA396 /* HStreamTests-Info.plist */,
+				88DF5538142F8DD9009CA396 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88DF5505142F8DD8009CA396 /* HStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88DF5541142F8DD9009CA396 /* Build configuration list for PBXNativeTarget "HStream" */;
+			buildPhases = (
+				88DF5502142F8DD8009CA396 /* Sources */,
+				88DF5503142F8DD8009CA396 /* Frameworks */,
+				88DF5504142F8DD8009CA396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HStream;
+			productName = HStream;
+			productReference = 88DF5506142F8DD8009CA396 /* HStream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88DF552C142F8DD9009CA396 /* HStreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88DF5544142F8DD9009CA396 /* Build configuration list for PBXNativeTarget "HStreamTests" */;
+			buildPhases = (
+				88DF5528142F8DD9009CA396 /* Sources */,
+				88DF5529142F8DD9009CA396 /* Frameworks */,
+				88DF552A142F8DD9009CA396 /* Resources */,
+				88DF552B142F8DD9009CA396 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88DF5534142F8DD9009CA396 /* PBXTargetDependency */,
+			);
+			name = HStreamTests;
+			productName = HStreamTests;
+			productReference = 88DF552D142F8DD9009CA396 /* HStreamTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88DF54FD142F8DD8009CA396 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "University of Nebraska-Lincoln";
+			};
+			buildConfigurationList = 88DF5500142F8DD8009CA396 /* Build configuration list for PBXProject "HStream" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 88DF54FB142F8DD8009CA396;
+			productRefGroup = 88DF5507142F8DD8009CA396 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88DF5505142F8DD8009CA396 /* HStream */,
+				88DF552C142F8DD9009CA396 /* HStreamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88DF5504142F8DD8009CA396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DF5515142F8DD9009CA396 /* InfoPlist.strings in Resources */,
+				88DF551E142F8DD9009CA396 /* MainWindow.xib in Resources */,
+				88DF5524142F8DD9009CA396 /* DetailView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DF552A142F8DD9009CA396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DF553A142F8DD9009CA396 /* InfoPlist.strings in Resources */,
+				88DF553C142F8DD9009CA396 /* HStreamTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88DF552B142F8DD9009CA396 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88DF5502142F8DD8009CA396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DF5517142F8DD9009CA396 /* main.m in Sources */,
+				88DF551B142F8DD9009CA396 /* HStreamAppDelegate.m in Sources */,
+				88DF5521142F8DD9009CA396 /* DetailViewController.m in Sources */,
+				88DF5527142F8DD9009CA396 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DF5528142F8DD9009CA396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DF553E142F8DD9009CA396 /* HStreamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88DF5534142F8DD9009CA396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88DF5505142F8DD8009CA396 /* HStream */;
+			targetProxy = 88DF5533142F8DD9009CA396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88DF5513142F8DD9009CA396 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88DF5514142F8DD9009CA396 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		88DF551C142F8DD9009CA396 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88DF551D142F8DD9009CA396 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		88DF5522142F8DD9009CA396 /* DetailView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88DF5523142F8DD9009CA396 /* en */,
+			);
+			name = DetailView.xib;
+			sourceTree = "<group>";
+		};
+		88DF5538142F8DD9009CA396 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88DF5539142F8DD9009CA396 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88DF553F142F8DD9009CA396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		88DF5540142F8DD9009CA396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88DF5542142F8DD9009CA396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HStream/HStream-Prefix.pch";
+				INFOPLIST_FILE = "HStream/HStream-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		88DF5543142F8DD9009CA396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HStream/HStream-Prefix.pch";
+				INFOPLIST_FILE = "HStream/HStream-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		88DF5545142F8DD9009CA396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HStream.app/HStream";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HStream/HStream-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HStreamTests/HStreamTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		88DF5546142F8DD9009CA396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HStream.app/HStream";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HStream/HStream-Prefix.pch";
+				INFOPLIST_FILE = "HStreamTests/HStreamTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88DF5500142F8DD8009CA396 /* Build configuration list for PBXProject "HStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88DF553F142F8DD9009CA396 /* Debug */,
+				88DF5540142F8DD9009CA396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88DF5541142F8DD9009CA396 /* Build configuration list for PBXNativeTarget "HStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88DF5542142F8DD9009CA396 /* Debug */,
+				88DF5543142F8DD9009CA396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88DF5544142F8DD9009CA396 /* Build configuration list for PBXNativeTarget "HStreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88DF5545142F8DD9009CA396 /* Debug */,
+				88DF5546142F8DD9009CA396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88DF54FD142F8DD8009CA396 /* Project object */;
+}
