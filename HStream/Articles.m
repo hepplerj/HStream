@@ -8,7 +8,7 @@
 
 #import "Articles.h"
 
-#define INTERESTING_TAG_NAMES @"item", @"title", @"link", nil
+#define INTERESTING_TAG_NAMES @"entry", @"item", @"title", @"link", nil
 
 //NSString * const EMRXMLDownloadCompleteNotification = @"EMRXMLDownloadCompleteNotification";
 
@@ -50,6 +50,10 @@
         [currentArticle release];
         currentArticle = [[NSMutableDictionary alloc] initWithCapacity:[tags count]];
     }
+    else if ([elementName isEqualToString:@"entry"]) {
+        [currentArticle release];
+        currentArticle = [[NSMutableDictionary alloc] initWithCapacity:[tags count]];
+    }
     else if ([elementName isEqualToString:@"link"]) {
         NSString *link = [attributeDict objectForKey:@"href"];
         [currentArticle setValue:link forKey:@"link"];
@@ -74,6 +78,10 @@
         [currentArticle setValue:currentText forKey:currentElementName];
     }
     else if ([elementName isEqualToString:@"item"]) {
+        [articleArray addObject:currentArticle];
+        NSLog(@"%@", [currentArticle objectForKey:@"title"]);
+    }
+    else if ([elementName isEqualToString:@"entry"]) {
         [articleArray addObject:currentArticle];
         NSLog(@"%@", [currentArticle objectForKey:@"title"]);
     }
