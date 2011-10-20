@@ -49,7 +49,7 @@
         url = [NSString stringWithFormat:@"http://digitalhistory.unl.edu"];
     }
     else {
-        url = [NSString stringWithFormat:@"%@", url];
+        url = [NSString stringWithFormat:@"%@", [_detailItem objectForKey:@"link"]];
         NSLog(@"Load the detail view from URL: %@", url);
     }
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
@@ -117,11 +117,47 @@
 
 /*
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+ 
+ // Looking into how to add a navigation to the bottom
+ 
+ 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+ 
+    CGFloat width = self.view.frame.size.width;
+    
+    UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:
+                               CGRectMake(0,0,width,52)];
+    navBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:navBar];
+    [navBar release];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:
+                      CGRectMake(10,2,width-20,14)];
+    label.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    label.text = @"some text for the title...";
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont systemFontOfSize:12];
+    label.textAlignment = UITextAlignmentCenter;
+    [navBar addSubview:label];
+    [label release];
+    
+    UITextField *textField = [[UITextField alloc] initWithFrame:
+                              CGRectMake(10,19,width-80,26)];
+    textField.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.font = [UIFont systemFontOfSize:17];
+    [navBar addSubview:textField];
+    [textField release];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setFrame:CGRectMake(width-60,19,50,26)];
+    [button setTitle:@"Go" forState:UIControlStateNormal];
+    button.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+    [navBar addSubview:button];
 }
- */
+*/
 
 - (void)viewDidUnload
 {

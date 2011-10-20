@@ -8,9 +8,9 @@
 
 #import "Articles.h"
 
-#define INTERESTING_TAG_NAMES @"entry", @"item", @"title", @"link", nil
+#define INTERESTING_TAG_NAMES @"channel", @"entry", @"item", @"title", @"link", nil
 
-//NSString * const EMRXMLDownloadCompleteNotification = @"EMRXMLDownloadCompleteNotification";
+NSString * const EMRXMLDownloadCompleteNotification = @"EMRXMLDownloadCompleteNotification";
 
 @implementation Articles
 @synthesize articleArray;
@@ -40,17 +40,21 @@
     currentText = nil;
 }
 
-- (void) parser: (NSXMLParser *)parser  
-    didStartElement:(NSString *)elementName 
-    namespaceURI:(NSString *)namespaceURI 
-    qualifiedName:(NSString *)qName 
-    attributes:(NSDictionary *)attributeDict
+- (void) parser:(NSXMLParser *)parser  
+didStartElement:(NSString *)elementName 
+   namespaceURI:(NSString *)namespaceURI 
+  qualifiedName:(NSString *)qName 
+     attributes:(NSDictionary *)attributeDict
 {
     if ([elementName isEqualToString:@"item"]) {
         [currentArticle release];
         currentArticle = [[NSMutableDictionary alloc] initWithCapacity:[tags count]];
     }
     else if ([elementName isEqualToString:@"entry"]) {
+        [currentArticle release];
+        currentArticle = [[NSMutableDictionary alloc] initWithCapacity:[tags count]];
+    }
+    else if ([elementName isEqualToString:@"channel"]) {
         [currentArticle release];
         currentArticle = [[NSMutableDictionary alloc] initWithCapacity:[tags count]];
     }
@@ -70,9 +74,9 @@
 }
 
 - (void) parser:(NSXMLParser *)parser
-    didEndElement:(NSString *)elementName 
-    namespaceURI:(NSString *)namespaceURI 
-    qualifiedName:(NSString *)qName
+  didEndElement:(NSString *)elementName 
+   namespaceURI:(NSString *)namespaceURI 
+  qualifiedName:(NSString *)qName
 {
     if ([elementName isEqualToString:currentElementName]) {
         [currentArticle setValue:currentText forKey:currentElementName];
@@ -85,8 +89,15 @@
         [articleArray addObject:currentArticle];
         NSLog(@"%@", [currentArticle objectForKey:@"title"]);
     }
+    else if ([elementName isEqualToString:@"item"]) {
+        [articleArray addObject:currentArticle];
+        NSLog(@"%@", [currentArticle objectForKey:@"title"]);
+    }
+    else if ([elementName isEqualToString:@"entry"]) {
+        [articleArray addObject:currentArticle];
+        NSLog(@"%@", [currentArticle objectForKey:@"title"]);
+    }
     [currentText release], currentText = nil;
-    
 }
 
 - (void) parserDidEndDocument:(NSXMLParser *)parser 
@@ -97,7 +108,7 @@
 - (void) connectToFeed {
     [feedData release];
     feedData = [[NSMutableData alloc] init];
-    NSURL *url = [NSURL URLWithString:@"http://feeds.feedburner.com/DigitalHumanitiesNow?format=xml"];
+    NSURL *url = [NSURL URLWithString:@"http://feeds.feedburner.com/oreilly/radar/atom"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [connection release];

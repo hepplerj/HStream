@@ -25,7 +25,7 @@
     //[nc addObserver:self selector:@selector(handleXMLDownloadComplete:) name:EMRXMLDownloadCompleteNotification object:nil];
 }
 	
-- (void) handleXMLDownloadComplete: (NSNotification *)note {
+- (void) handleXMLDownloadComplete:(NSNotification *)note {
     [self.tableView reloadData];
 }
 
