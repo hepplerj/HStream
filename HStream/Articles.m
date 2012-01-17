@@ -108,7 +108,7 @@ didStartElement:(NSString *)elementName
 - (void) connectToFeed {
     [feedData release];
     feedData = [[NSMutableData alloc] init];
-    NSURL *url = [NSURL URLWithString:@"http://feeds.feedburner.com/oreilly/radar/atom"];
+    NSURL *url = [NSURL URLWithString:@"http://feeds.feedburner.com/DHNowEditorsChoiceAndNews"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     [connection release];
